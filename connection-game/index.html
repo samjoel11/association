@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="welcome-content">
+            <h1>Round-2 Connexion</h1>
+            <div class="welcome-image">
+                <!-- Replace src with your Rajinikanth image URL -->
+                <img src="https://img.theweek.in/content/dam/week/news/entertainment/images/2019/5/2/Rajinikanth-darbar-shooting.jpg"
+                    alt="Welcome">
+            </div>
+            <button id="start-btn" class="btn-primary start-btn">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Thank You Screen -->
+    <div id="thank-you-screen" class="welcome-screen hidden">
+        <div class="welcome-content">
+            <h1>THANK YOU</h1>
+            <div class="welcome-image">
+                <!-- Replace src with your Thank You image URL -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNAKNvEhkewAr1w6JZgSY6vy1lFn3cXFJK-A&s"
+                    alt="Thank You">
+            </div>
+            <button id="restart-btn" class="btn-primary start-btn">Play Again</button>
+        </div>
+    </div>
+
+    <div class="app-container hidden" id="app-container">
+
+
+        <!-- Main Game Area -->
+        <main class="game-area">
+            <div class="game-content">
+                <div class="images-container" id="images-container">
+                    <!-- Images will be injected here by JS -->
+                </div>
+
+                <div class="interaction-area" id="interaction-area">
+                    <button id="answer-btn" class="btn-primary">Show Answer</button>
+                </div>
+
+                <div class="answer-reveal hidden" id="answer-reveal">
+                    <h1 id="revealed-answer"></h1>
+                    <button id="next-btn" class="btn-secondary hidden">Next Round</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
